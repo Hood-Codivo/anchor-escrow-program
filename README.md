@@ -29,6 +29,6 @@ Closes the accounts and refunds rent to the Maker.
 
 <img width="2880" height="1706" alt="image" src="https://github.com/user-attachments/assets/f708f37a-95d3-457e-8e82-3c7c23d3f0d9" />
 
-
+Running: surfpool start
 
 <img width="2880" height="1710" alt="image" src="https://github.com/user-attachments/assets/cb346c42-d718-4973-8bd9-e9eb250657cd" />
