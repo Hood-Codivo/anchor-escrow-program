@@ -1,0 +1,15 @@
+################################################################
+# Manage anchor-escrow-program deployment through Crypto Infrastructure as Code
+################################################################
+
+addon "svm" {
+    rpc_api_url = input.rpc_api_url
+    network_id = input.network_id
+}
+
+action "deploy_anchor_escrow_program" "svm::deploy_program" {
+    description = "Deploy anchor_escrow_program program"
+    program = svm::get_program_from_anchor_project("anchor_escrow_program") 
+    authority = signer.authority
+    payer = signer.payer
+}

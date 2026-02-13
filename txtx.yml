@@ -1,0 +1,22 @@
+---
+name: anchor-escrow-program
+id: anchor-escrow-program
+runbooks:
+  - name: deployment
+    description: Deploy programs
+    location: runbooks/deployment
+environments:
+  localnet:
+      network_id: localnet
+      rpc_api_url: http://127.0.0.1:8899
+      payer_keypair_json: ~/.config/solana/id.json
+      authority_keypair_json: ~/.config/solana/id.json
+      program_id: D9XqEpgF1FkB6qXA9mt99ck6WwmzPHA6coHbSPAN5Wgy
+      maker_publickey: QjbtoYq1DzaESV4Yd4VxGaTrqwLb6mYRLonVNHLodcH
+      taker_publickey: Bo7t8iDX4K4bESxqAD5C86ntRv9SMErUpZHq9cWBkfiW
+  devnet:
+      network_id: devnet
+      rpc_api_url: https://api.devnet.solana.com
+      payer_keypair_json: ~/.config/solana/id.json
+      authority_keypair_json: ~/.config/solana/id.json
+
